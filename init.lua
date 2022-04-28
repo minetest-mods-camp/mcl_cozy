@@ -1,3 +1,5 @@
+local S = minetest.get_translator(minetest.get_current_modname())
+
 minetest.register_globalstep(function(dtime)
 	local players = minetest.get_connected_players()
 	for i=1, #players do
@@ -17,7 +19,7 @@ minetest.register_globalstep(function(dtime)
 end)
 
 minetest.register_chatcommand("sit", {
-	description = "Sit down",
+	description = S("Sit down"),
 	func = function(name)
 		local player = minetest.get_player_by_name(name)
 		if mcl_player.player_attached[name] then
@@ -35,7 +37,7 @@ minetest.register_chatcommand("sit", {
 })
 
 minetest.register_chatcommand("lay", {
-	description = "Lay down",
+	description = S("Lay down"),
 	func = function(name)
 		local player = minetest.get_player_by_name(name)
 		if mcl_player.player_attached[name] then
