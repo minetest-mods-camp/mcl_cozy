@@ -32,6 +32,7 @@ minetest.register_chatcommand("sit", {
 			player:set_physics_override(0, 0, 0)
 			mcl_player.player_attached[name] = true
 			mcl_player.player_set_animation(player, "sit", 30)
+			mcl_title.set(player, "actionbar", {text=S("Move to stand up"), color="white", stay=60})
 		end
 	end
 })
@@ -50,6 +51,7 @@ minetest.register_chatcommand("lay", {
 			player:set_physics_override(0, 0, 0)
 			mcl_player.player_attached[name] = true
 			mcl_player.player_set_animation(player, "lay", 0)
+			mcl_title.set(player, "actionbar", {text=S("Move to stand up"), color="white", stay=60})
 		end
 	end
 })

@@ -1,3 +1,4 @@
 # textdomain: mcl_cozy
 Sit down=
 Lay down=
+Move to stand up=
