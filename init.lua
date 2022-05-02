@@ -37,8 +37,8 @@ minetest.register_chatcommand("sit", {
 			mcl_player.player_attached[name] = true
 			mcl_player.player_set_animation(player, "sit", 30)
 			if mcl_cozy_print_actions then
-				minetest.chat_send_all("* "..name..S(" sits")
-			end,
+				minetest.chat_send_all("* "..name..S(" sits"))
+			end
 			mcl_title.set(player, "actionbar", {text=S("Move to stand up"), color="white", stay=60})
 		end
 	end
@@ -63,7 +63,7 @@ minetest.register_chatcommand("lay", {
 			mcl_player.player_set_animation(player, "lay", 0)
 			if mcl_cozy_print_actions then
 				minetest.chat_send_all("* "..name..S(" lies"))
-			end,
+			end
 			mcl_title.set(player, "actionbar", {text=S("Move to stand up"), color="white", stay=60})
 		end
 	end
