@@ -2,3 +2,6 @@
 Sit down=
 Lay down=
 Move to stand up=
+ sits=
+ lies=
+ stands up=

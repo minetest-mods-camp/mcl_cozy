@@ -1,0 +1,2 @@
+# If false then actions (like "* player stands up", in style of /me) won't be printed
+mcl_cozy_print_actions (Print actions) bool true
